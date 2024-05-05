@@ -1,16 +1,23 @@
 {
-  "name": "finalapp",
+  "name": "backend",
   "version": "1.0.0",
-  "description": "## Table of Contents * [General Info](#general-information) * [Technologies Used](#technologies-used) * [Features](#features) * [Project Status](#project-status) * [Room for Improvement](#room-for-improvement)",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node backend/server.js",
-    "build": "cd frontend && npm install && npm run build"
-  }
-  ,
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
   "author": "",
   "license": "ISC",
+  "description": "",
   "dependencies": {
-    "node": "^22.1.0"
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongobd": "^0.0.1-security.0",
+    "mongoose": "^8.3.3",
+    "nodemon": "^3.1.0"
   }
 }
