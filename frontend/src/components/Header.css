@@ -1,0 +1,37 @@
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .spin-text {
+    animation: spin 10s linear infinite;
+    background-color: #32c1e9; 
+    color: white; 
+    padding: 20px; 
+  }
+  
+  .navbar-brand {
+    margin-left: auto; 
+  }
+  
+  
+  .custom-header {
+    background-color: black;
+  }
+  .flash-text {
+    color: #3dccc7; /* Flashing text color */
+    animation: flash-animation 0.5s infinite alternate; /* Faster animation */
+  }
+  
+  @keyframes flash-animation {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
