@@ -7,7 +7,6 @@ import NavigationBar from './NavigationBar';
 const Homepage = () => {
   return (
     <Container fluid>
-      <NavigationBar/>
       <SignupForm/>
     
     </Container>
