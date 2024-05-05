@@ -12,10 +12,13 @@ const Order = require('./models/ordersModel');
 
 const ordersRouter = require('./routes/orders')
 const usersRouter = require('./routes/users');
+const indexRouter = require('./routes/index');
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: 'http://localhost:3000'
+}));
 app.use(bodyParser.json());
 
 // Connect to MongoDB
@@ -30,6 +33,11 @@ mongoose
 // Routes for handling orders
 app.use('/api/orders', ordersRouter);
 app.use('/api/users', usersRouter);
+app.use('/', indexRouter);
+
+app.get('/', (req, res) => {
+  res.send('Hello, world!');
+});
 
 // Route for handling user signups
 app.post('/api/signup', async (req, res) => {
