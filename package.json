@@ -1,0 +1,11 @@
+{
+  "name": "finalapp",
+  "version": "1.0.0",
+  "description": "## Table of Contents * [General Info](#general-information) * [Technologies Used](#technologies-used) * [Features](#features) * [Project Status](#project-status) * [Room for Improvement](#room-for-improvement)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
